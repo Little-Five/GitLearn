@@ -11,5 +11,9 @@ def index():
 def login():
     return 'login success'
 
+@app.route('register')
+def rigister():
+    return 'register'
+
 if __name__=='__main__':
     app.run(debug=True)
