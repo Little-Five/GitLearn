@@ -7,5 +7,9 @@ app = Flask(__name__)
 def index():
     return 'hello world'
 
+@app.route('login')
+def login():
+    return 'login success'
+
 if __name__=='__main__':
     app.run(debug=True)
